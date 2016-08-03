@@ -4,11 +4,23 @@ body {
 }
 
 /*Nav*/
+
+header {
+	background-color: #D78BF6;
+}
 .navbar-header, .navbar-collapse {
 	background-color: #D78BF6;
+	border-color: none;
 	color: white;
 	font-size: 20px;
+	height: 100px;
 
+}
+
+.navbar-brand img {
+	height: 70px;
+	width: 30%;
+	float: left;
 }
 
 .nav li {
@@ -33,21 +45,56 @@ body {
 	border-radius: 5px;
 }
 
-.fondo {
+.fondo, .fondo-ocult {
 	background-image: url(../img/image.jpg);
 	background-size: 100% 100%;
 }
 
+.iam .description-img {
+	height: 300px;
+	width: 25%;
+}
+
+.tarjet .perfil img {
+	bottom: 50px;
+	height: 300px;
+	width: 100%;
+}
+
+.tarjet .descript {
+	left: 0;
+}
+
+.port h1, p {
+	color: white;
+}
+
+.fondo-ocult {
+	visibility: hidden;
+}
+
+.fondo-ocult {
+	visibility: hidden;
+}
+
+.perfilhidden {
+	visibility: hidden;
+}
 
 
 /*Estilos banner*/
-.slider-banner .banner img {
+.slider-banner .port img {
 	width: 100%;
 	vertical-align: top;
 	top: 0;
 	position: absolute;
 }
 
+.descript {
+	background-color: transparent;
+	color: white;
+	top: 40%;
+}
 
 /**/
 .button button {
@@ -64,33 +111,54 @@ body {
 
 
 
-/*Estilos flechas*/
-.slider-banner .flecha {
-	font-size: 35px;
-	line-height: 35px;
-	color:rgba(0,0,0,.2);
-	position: absolute;
-	top: 50%;
-	z-index: 1100;
+
+
+
+.box-ocult {
+	margin: 20px;
 }
 
-.slider-banner .flecha:hover {
-	color: rgba(0,0,0,.5);
+.box-ocult .perfilhidden, .box-ocult .descriptionhidden {
+	width: 100%;
+	height: 100px;
 }
 
-.slider-banner .previus {
-	left: 20px;
+.box-ocult .descriptionhidden {
+	margin: 20px;
 }
 
-.slider-banner .next {
-	right: 20px;
+.descriptionhidden {
+	margin: 0 60px;
+	padding: 0 20px;
 }
+
 
 /*Detail*/
 .detail {
 	background-color: #F780F6;
+	height: 450px;
 }
 
+.detail-languaje {
+	margin-left: 40px;
+}
+
+.detail .icon {
+	display: inline-block;
+	width: 100%;
+}
+
+.icon {
+	width: 100%;
+	height: 200px;
+	left: 25px;
+}
+
+.icon .icon-detail img {
+	height: 100px;
+	width: 50%;
+	top: 30px;
+}
 
 /*Icon*/
 
@@ -98,10 +166,8 @@ body {
 	float: left;
 }
 
-.icon .icon-detail {
-	width: 20%;
-	height: 100px;
-}
+
+
 
 /*Trabajos realizados*/
 .box-work {
@@ -144,4 +210,54 @@ body {
 
 
 /*Estilos redes sociales*/
+.footer {
+	background-color: #33A5B2;
 
+}
+
+.button button {
+	border-style: none;
+	color: white;
+}
+
+.button button:hover {
+	font-size: 25px;
+}
+.footer .Social {
+	margin: 20px 0;
+}
+
+.footer .Social a {
+	color: white;
+}
+
+.footer .Social a:hover {
+	font-size: 20px;
+}
+
+/*Estilos modales*/
+
+.modal-content {
+	top: 70px;
+}
+.modal-body {
+	height: 500px;
+	padding: 20px 60px;
+}
+
+.modal-body img {
+	float: left;
+	margin: 20px;
+	height: 300px;
+	width: 30%;
+}
+
+.modal-body p {
+	margin: 27px;
+}
+
+.modal-title {
+	text-align: center;
+	font-weight: bolder;
+	top: 20px;
+}
