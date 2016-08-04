@@ -241,6 +241,7 @@ header {
 	width: 100%
 	color: black;
 	background-color: #A88787;
+	top: -30px;
 }
 .modal-content {
 	top: 70px;
