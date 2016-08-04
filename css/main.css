@@ -72,8 +72,8 @@ header {
 }
 
 .perfil .caract img {
-	bottom: 50px;
-	height: 250px;
+	top: 30px;
+	height: 350px;
 	width: 100%;
 }
 
@@ -251,7 +251,6 @@ header {
 
 .modal-body .img-modal img {
 	float: left;
-	margin: 20px;
 	height: 200px;
 	width: 100%;
 }
