@@ -250,16 +250,18 @@ header {
 	padding: 20px 60px;
 }
 
-.modal-body img {
+.modal-body .img-modal img {
 	float: left;
 	margin: 20px;
-	height: 300px;
-	width: 50%;
+	height: 200px;
+	width: 100%;
 }
 
-.modal-body p {
+.modal-body .text-modal p {
 	margin: 27px;
 	color: #276B88;
+	width: 100%;
+	font-size: 12px;
 }
 
 .modal-title {
@@ -278,5 +280,5 @@ header {
 }
 
 
-/*scoll*/
+
 
