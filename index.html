@@ -14,27 +14,21 @@
   </head>
   <body>
     <header class="container-fluid">
-      <nav class="navbar navbar-default" role="navigation">
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <a class="navbar-brand" href="#"><img src="img/logotipo.png"><h3>Mi Portfolio</h3></a>
-        <!-- El logotipo y el icono que despliega el menú se agrupan
-             para mostrarlos mejor en los dispositivos móviles -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse"
-                  data-target=".navbar-ex1-collapse">
+            data-target="#navbarCollapse">
             <span class="sr-only">Desplegar navegación</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-      
         </div>
-       
-        <!-- Agrupar los enlaces de navegación, los formularios y cualquier
-             otro elemento que se pueda ocultar al minimizar la barra -->
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">Sobre mi</a></li>
-            <li><a href="#slider-Work">mis trabajos</a></li>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#detail">Lo aprendido</a></li>
+            <li><a href="#slider-Work">Mis trabajos</a></li>
             <li><a href="#redSociales">Contacto</a></li>
           </ul>
         </div>
@@ -44,58 +38,50 @@
       <section class="tarjet">
         <section class="port" id="port" style="height:400px">
           <div>
-            <div class="col-sm-12 col-xs-12 col-md-3 perfil" style="border-radius:50%">
-              <img src="img/perfil.png" class="img-responsive img-circle description-img">
+            <div class="col-sm-12 col-xs-12 col-md-3 perfil">
+              <div class="caract">
+                <img src="img/perfil.png" class="img-responsive img-circle description-img">
+              </div>
+              
             </div>
             <div class="col-sm-12 col-xs-12 col-md-9 descript" id="descript">
-              <h1 class="display-3 text-center">Mi nombre es Yessica Ancan</h1>
+              <div class="caract">
+                <h1 class="display-3 text-center">Mi nombre es Yessica Ancan</h1>
               <h4 class="lead text-center">Developer Front End</h4>
               <h5 class="text-center">Coders Laboratoria</h5>
               <div class="button text-center">
                 <button id="button"><a href="#modal" data-toggle="modal" data-target="#modal">Conoce m&aacute;s de m&iacute;</a></button>
               </div>
-              <div class="box-ocult" id="box-ocult">
-                <div class="iam">
-                  <div class="col-sm-12 col-xs-12 col-md-3 perfilhidden" style="border-radius:100%">
-                    <img src="img/perfil.png" class="img-responsive img-circle description-img">
-                  </div>
-                  <div class="col-sm-12 col-xs-12 col-md-9 descriptionhidden">
-                    <p class="text-center">Apasionada por descubrir nuevos aprendizajes y en general disfruto mucho dando vida a nuevos proyectos, algo que puedo hacer siendo Front-end es crear magia en cada click.</p>
-                  </div>
-                </div>
               </div>
+              
               <div id="modal" class="modal fade tarjet">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
-                <h3 class="modal-title">Mis gustos</h3>
-              </div>
-              <div class="modal-body">
-                <img src="img/perfil.png" class="img-responsive img-circle description-img">
-                <p>Me encanta asumir nuevas metas, me gusta codificar ... es una faceta que descubr&iacute; en Laboratoria, empez&oacute; como un desaf&iacute; que finalmente me enamor&oacute;.  En mis ratos libres me gusta escuchar m&uacute;sica y disfrutar de una buena lectura.</p>
-              </div>
-              <div class="modal-footer">
-                <div class="col-xs-12 col-sm-12 col-md-12 Social" id="Social">
-                  <a href="https://www.facebook.com/yessica.ancan"><span class="fa fa-facebook-square fa-3x" aria-hidden="true"></span></a>
-                  <a href="https://cl.linkedin.com/in/yessica-ancan-alonzo-087441a3"><span class="fa fa-linkedin-square fa-3x" aria-hidden="true"></span></a>
-                  <a href="https://github.com/ankanyessy"><span class="fa fa-github-square fa-3x" aria-hidden="true"></span></a>
-                  <a href="https://twitter.com/ankanyessy"><span class="fa fa-twitter-square fa-3x" aria-hidden="true"></span></a>
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+                      <h3 class="modal-title">Mis gustos</h3>
+                    </div>
+                    <div class="modal-body">
+                      <img src="img/perfil.png" class="img-responsive img-circle description-img">
+                      <p>Apasionada por descubrir nuevos aprendizajes y en general disfruto mucho dando vida a nuevos proyectos, algo que puedo hacer siendo Front-end es crear magia en cada click. Me encanta asumir nuevas metas, me gusta codificar ... es una faceta que descubr&iacute; en Laboratoria, empez&oacute; como un desaf&iacute; que finalmente me enamor&oacute;.  En mis ratos libres me gusta escuchar m&uacute;sica y disfrutar de una buena lectura.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <div class="col-xs-12 col-sm-12 col-md-12 Social" id="Social">
+                        <a href="https://www.facebook.com/yessica.ancan"><span class="fa fa-facebook-square fa-3x" aria-hidden="true"></span></a>
+                        <a href="https://cl.linkedin.com/in/yessica-ancan-alonzo-087441a3"><span class="fa fa-linkedin-square fa-3x" aria-hidden="true"></span></a>
+                        <a href="https://github.com/ankanyessy"><span class="fa fa-github-square fa-3x" aria-hidden="true"></span></a>
+                        <a href="https://twitter.com/ankanyessy"><span class="fa fa-twitter-square fa-3x" aria-hidden="true"></span></a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
             </div>
           </div>
         </section>
       </section>
     </div>
-    <div class="container-fluid fondo-ocult">
-        
-    </div>
-    <section class="container-fluid detail">
-      <div>
+    <section class="container-fluid detail" id="detail">
         <div class="detail-languaje">
           <h2 class="text-center">Lo aprendido</h2>
           <div class="row icon">
@@ -116,8 +102,7 @@
               <p>Para crear efectos mas atractivos sin tanta maquetación.</p>
             </div>
           </div>
-        </div>
-      </div>    
+        </div>    
     </section>  
     
     <div class="container-fluid box-work">
@@ -149,26 +134,26 @@
         </div>
       </section>
     </div>
-    <div class="container-fluid">
-      <section class="row footer">
-        <div id="redSociales" class="col-xs-12 col-sm-12 col-md-12 slide-socials text-center">
-          <div class="col-xs-12 col-sm-12 col-md-12 button text-center">
-            <button>Visita mis perfiles</button>
+    <div class="container-fluid section-foot">
+      <div class="container">
+        <section class="row footer">
+          <div id="redSociales" class="col-sm-12 col-md-12 slide-socials">
+            <div class="button text-center">
+              <button class="text-center">Visita mis perfiles</button>
+            </div>
+            <div class="Social text-center" id="Social">
+              <a href="https://www.facebook.com/yessica.ancan"><span class="fa fa-facebook-square fa-3x" aria-hidden="true"></span></a>
+              <a href="https://cl.linkedin.com/in/yessica-ancan-alonzo-087441a3"><span class="fa fa-linkedin-square fa-3x" aria-hidden="true"></span></a>
+              <a href="https://github.com/ankanyessy"><span class="fa fa-github-square fa-3x" aria-hidden="true"></span></a>
+              <a href="https://twitter.com/ankanyessy"><span class="fa fa-twitter-square fa-3x" aria-hidden="true"></span></a>
+            </div>
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-12 Social" id="Social">
-            <a href="https://www.facebook.com/yessica.ancan"><span class="fa fa-facebook-square fa-3x" aria-hidden="true"></span></a>
-            <a href="https://cl.linkedin.com/in/yessica-ancan-alonzo-087441a3"><span class="fa fa-linkedin-square fa-3x" aria-hidden="true"></span></a>
-            <a href="https://github.com/ankanyessy"><span class="fa fa-github-square fa-3x" aria-hidden="true"></span></a>
-            <a href="https://twitter.com/ankanyessy"><span class="fa fa-twitter-square fa-3x" aria-hidden="true"></span></a>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
 
-    
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+
     <script src="js/jquery-3.0.0.min.js"></script>
-    <!--<script src="js/bootstrap.min.js"></script>-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
 </html>

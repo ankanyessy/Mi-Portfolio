@@ -17,6 +17,10 @@ header {
 	
 }
 
+.navbar {
+	border-style: solid;
+	border-color: #D78BF6;
+}
 .navbar-brand img {
 	height: 70px;
 	width: 30%;
@@ -42,7 +46,7 @@ header {
 }
 
 /*Body*/
-.container {
+.container-fluid {
 	width: 100%;
 	max-width: 1280px;
 	margin: auto;
@@ -67,9 +71,9 @@ header {
 	width: 25%;
 }
 
-.tarjet .perfil img {
+.perfil .caract img {
 	bottom: 50px;
-	height: 300px;
+	height: 250px;
 	width: 100%;
 }
 
@@ -81,18 +85,13 @@ header {
 	color: white;
 }
 
-.fondo-ocult {
-	visibility: hidden;
+.fondo {
+	height: 700px;
 }
 
-.fondo-ocult {
-	visibility: hidden;
+.caract {
+	margin-top: 20%;
 }
-
-.perfilhidden {
-	visibility: hidden;
-}
-
 
 /*Estilos banner*/
 .slider-banner .port img {
@@ -106,6 +105,7 @@ header {
 	background-color: transparent;
 	color: white;
 	top: 40%;
+	box-sizing: border-box;
 }
 
 /**/
@@ -121,39 +121,19 @@ header {
 }
 
 
-
-
-
-
-
-.box-ocult {
-	margin: 20px;
-}
-
-.box-ocult .perfilhidden, .box-ocult .descriptionhidden {
-	width: 100%;
-	height: 100px;
-}
-
-.box-ocult .descriptionhidden {
-	margin: 20px;
-}
-
-.descriptionhidden {
-	margin: 0 60px;
-	padding: 0 20px;
-}
-
-
 /*Detail*/
 .detail {
 	background-color: #F780F6;
-	height: 450px;
-	margin-top: -40px;
+	height: 600px;
+	margin-top: auto;
 }
 
 .detail-languaje {
 	margin-left: 40px;
+}
+
+.detail-languaje h2 {
+	margin-top: -200px;
 }
 
 .detail .icon {
@@ -165,6 +145,11 @@ header {
 	width: 100%;
 	height: 200px;
 	left: 25px;
+}
+
+.icon-detail {
+	box-sizing: border-box;
+	top: 70px;
 }
 
 .icon .icon-detail img {
@@ -223,14 +208,17 @@ header {
 
 
 /*Estilos redes sociales*/
-.footer {
+.section-foot {
 	background-color: #33A5B2;
-
 }
 
 .button button {
 	border-style: none;
 	color: white;
+}
+
+.slide-socials {
+	width: 100%;
 }
 
 
@@ -288,3 +276,7 @@ header {
 	color: #276B88;
 	
 }
+
+
+/*scoll*/
+
