@@ -237,15 +237,13 @@ header {
 
 /*Estilos modales*/
 .modal {
-	height: 700px;
+	height: 500px;
 	width: 100%
 	color: black;
 	background-color: #A88787;
 	top: -30px;
 }
-.modal-content {
-	top: 70px;
-}
+
 .modal-body {
 	height: 300px;
 	padding: 20px 60px;
