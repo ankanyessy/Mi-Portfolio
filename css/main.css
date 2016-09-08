@@ -73,8 +73,10 @@ header {
 
 .perfil .caract img {
 	top: 30px;
-	height: 350px;
+	height: 300px;
 	width: 100%;
+	background-size: 100% 100%;
+	border-radius: 50%;
 }
 
 .tarjet .descript {
